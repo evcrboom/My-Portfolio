@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-aboutme {
+    background: white;
+    width: auto;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-blog {
+    position: relative;
+    background: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    min-height: 27rem;
+    min-width: 20rem;
+}
+
+img.profile {
+    position: absolute;
+    width: 90%;
+    top: 2rem;
+    left: 5%;
+}
