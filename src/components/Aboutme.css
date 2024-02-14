@@ -4,12 +4,20 @@
     box-sizing: border-box;
 }
 
+#Aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    gap: 1rem;
+}
+
 .background-aboutme {
     background: white;
     width: auto;
     height: 60vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -26,4 +34,58 @@ img.profile {
     width: 90%;
     top: 2rem;
     left: 5%;
+}
+
+h1 {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 2.5rem;
+    color: #000000DE;
+}
+
+h2 {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+p {
+    font-family: "Lora", serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 3rem;
+}
+
+.card {
+    transform: translateY(-2rem)
+}
+
+@media screen and (max-width: 1518px) {
+    .card {
+        transform: translateY(0rem)
+    }
+}
+
+@media screen and (max-width: 1286px) {
+    p {
+        font-family: "Lora", serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 2.8rem;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .background-aboutme {
+        background: white;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 2rem;
+    }
+
 }

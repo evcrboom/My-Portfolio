@@ -101,7 +101,12 @@
     
     .navbar {
         justify-content: end;
-    }
+    }   
+}
 
-   
+@media screen and (max-width: 430px) {
+    .nav-links {
+        font-size: 1.5rem;   
+        height: 100vh;   
+    }
 }
