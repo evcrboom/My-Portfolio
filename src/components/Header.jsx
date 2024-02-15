@@ -31,6 +31,7 @@ const Header = ()=> {
         steps={[name, 1500]} 
         wrapper="h2" />
         <Typical
+        className="p-text"
         steps={['I am FRONT-END DEVELOPER', 2000, 'I am BACK-END DEVELOPER', 2000, 'I am FULL-STACK DEVELOPER', 2000, 'I am CIVIL-ENGINEER', 2000]}
         loop={Infinity}
         wrapper="p"

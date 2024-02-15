@@ -13,7 +13,7 @@ const Navbar = () => {
             <div className="logo">console.log(Nattapat.Portfolio)</div>
             <ul className={`nav-links ${isOpen ? "open" : ""}`}>
                 <li><a href="#Aboutme">About Me</a></li>
-                <li><a href="#skills">My Skills</a></li>
+                <li><a href="#myskills">My Skills</a></li>
                 <li><a href="#projects">My Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
             </ul>

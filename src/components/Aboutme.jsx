@@ -1,10 +1,21 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import "./Aboutme.css";
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
-import { red } from "@mui/material/colors";
 
 const Aboutme = ()=>{
+    const [cardWidth, setCardWidth] = useState("65%");
+    useEffect(()=>{
+        const handleCardWidth = ()=>{
+            if(window.innerWidth <= 1030){
+                setCardWidth("90%");
+            } else {
+                setCardWidth("65%");
+            }
+        };
+        window.addEventListener("resize",handleCardWidth);
+        return () => window.removeEventListener("resize",handleCardWidth)
+    },[]);
     
     return (<section id="Aboutme">
         <h1>About me</h1>
@@ -12,7 +23,7 @@ const Aboutme = ()=>{
         <div className="photo-blog">
             <img className="profile" src={process.env.PUBLIC_URL + '/images/profile/profilepicture.png'} alt="Profile" />
         </div>
-        <Card className="card" sx={{maxWidth: "65%"}}>
+        <Card className="card" sx={{maxWidth: cardWidth}}>
     <CardContent >
     <h2>Hi :)</h2>
     <br /><br />

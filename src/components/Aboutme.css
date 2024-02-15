@@ -37,8 +37,8 @@ img.profile {
 }
 
 h1 {
-    font-family: "Lora", serif;
-    font-style: italic;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
     font-size: 2.5rem;
     color: #000000DE;
 }
@@ -80,12 +80,10 @@ p {
 @media screen and (max-width: 1030px) {
     .background-aboutme {
         background: white;
-        width: auto;
         height: auto;
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         gap: 2rem;
     }
-
 }
