@@ -1,19 +1,13 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.container {
+.myskill-container {
     display: flex;
     flex-direction: column;   
     background: #FFE4C4;
     height: auto;
-    padding: 4rem 0;
+    padding: 2.5rem 0 4rem 0;
     line-height: 5rem;
 }
 
-h2 {   
+.myskill-container h2 {   
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 2.5rem;
@@ -21,7 +15,7 @@ h2 {
     color: #000000DE;
 }
 
-h3 {
+.myskill-container h3 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 1.5rem;
@@ -57,5 +51,6 @@ h3 {
 @media screen and (max-width: 650px) {
     .icon {
         gap: 1rem;
+        flex-wrap: wrap;
     }
 }

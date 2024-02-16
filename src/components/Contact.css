@@ -1,0 +1,119 @@
+#contact-me {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    background: #1f1f1f;
+}
+
+.contact-container {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-detail {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+}
+
+.map-wrap {
+    height: 60vh;
+    width: 50%;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: white;
+    font-style: normal;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    width: 30%;
+    color: white;
+    font-style: normal;
+}
+
+.contact-info h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: white;
+}
+
+form {
+    padding-top: 30px;
+    max-width: 600px; 
+  }
+  
+  input[type="text"],
+  textarea[type="text"],
+  input[type="email"] {
+    font-family: "Poppins", sans-serif;
+    background: whitesmoke;
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus,
+  textarea[type="text"]:focus,
+  input[type="email"]:focus {
+    border-color: #007bff; 
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+    button[type="submit"]:hover {
+    background-color: #0056b3; /* สีเข้มขึ้นเล็กน้อยเมื่อ hover */
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .contact-info.entered {
+    animation: slideFromLeft 0.5s forwards;
+  }
+  
+  .map-wrap.entered {
+    animation: slideFromRight 0.5s forwards;
+  }

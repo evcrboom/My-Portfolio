@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 #Aboutme {
     display: flex;
     flex-direction: column;
@@ -36,25 +30,25 @@ img.profile {
     left: 5%;
 }
 
-h1 {
+#Aboutme h1 {
     font-family: "Poppins", sans-serif;
     font-style: normal;
     font-size: 2.5rem;
     color: #000000DE;
 }
 
-h2 {
+#Aboutme h2 {
     font-family: "Lora", serif;
     font-size: 2rem;
     font-weight: 700;
-    font-style: italic;
+    font-style: normal;
 }
 
-p {
+#Aboutme p {
     font-family: "Lora", serif;
     font-size: 1.4rem;
     font-weight: 400;
-    font-style: italic;
+    font-style: normal;
     line-height: 3rem;
 }
 
@@ -69,7 +63,7 @@ p {
 }
 
 @media screen and (max-width: 1286px) {
-    p {
+    #Aboutme p {
         font-family: "Lora", serif;
         font-size: 1.3rem;
         font-weight: 400;

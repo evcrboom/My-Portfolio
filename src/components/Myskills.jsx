@@ -11,7 +11,10 @@ const Myskills = ()=>{
     const [iconSize, setIconSize] = useState(120);
     useEffect(()=>{
         const handleResize = ()=>{
-            if(window.innerWidth <= 810){
+            if(window.innerWidth <= 500){
+                setIconSize(50);
+            }
+             else if(window.innerWidth <= 810){
                 setIconSize(80);
             } else {
                 setIconSize(120)
@@ -21,7 +24,7 @@ const Myskills = ()=>{
         return () => window.removeEventListener("resize", handleResize);
     },[]);
     return (<section id="myskills">
-        <div className="container">
+        <div className="myskill-container">
             <div className="row">
             <h2>
                 My skills
