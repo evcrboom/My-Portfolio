@@ -10,38 +10,19 @@ const Contact = () => {
         iconUrl: process.env.PUBLIC_URL +"/images/icon/map-icon.png",
         iconSize: [60,60]
     });
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('entered');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 0.5 });
-
-        const contactInfo = document.querySelector('.contact-info');
-        const mapWrap = document.querySelector('.map-wrap');
-
-        if (contactInfo && mapWrap) {
-            observer.observe(contactInfo);
-            observer.observe(mapWrap);
-        } 
-
-        // Cleanup observer on component unmount
-        return () => {
-            observer.disconnect();
-        };
-    }, []);
     return (<section id="contact-me">
         <div className="contact-container">
             <h2>Contact me</h2>
         <div className="contact-detail">
         <div className="contact-info">
+            <div className="header-address">
             <h3>Address:</h3>
+            </div>
             <br />
+            <div className="address-detail">
             <p>556/32 Niche Pride Tao Poon-Interchange, Pracharat Sai 2 Road, Bang Sue Subdistrict, Bang Sue District, Bangkok 10800, Thailand</p>
             <ContactForm />
+            </div>
         </div>
         <div className='map-wrap'>
         <MapContainer center={[13.805945107535331, 100.53208896781283]} zoom={16} style={{ height: "100%" }}>

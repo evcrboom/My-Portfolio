@@ -88,32 +88,31 @@ form {
     background-color: #0056b3; /* สีเข้มขึ้นเล็กน้อยเมื่อ hover */
   }
 
-  @keyframes slideFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
+  @media screen and (max-width:954px) {
+    .map-wrap {
+      height: 70vh;
     }
   }
-  
-  @keyframes slideFromRight {
-    0% {
-      transform: translateX(100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .contact-info.entered {
-    animation: slideFromLeft 0.5s forwards;
-  }
-  
-  .map-wrap.entered {
-    animation: slideFromRight 0.5s forwards;
-  }
+
+@media screen and (max-width:800px) {
+  .contact-detail {
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.map-wrap {
+  height: 50vh;
+  width: 90%;
+}
+
+.contact-info {
+  width: 90%
+}
+
+.address-detail p{
+  font-size: 1.2rem;
+}
+
+}

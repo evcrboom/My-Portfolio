@@ -4,6 +4,8 @@ import Header from "./Header";
 import Aboutme from "./Aboutme";
 import Myskills from "./Myskills";
 import Contact from "./Contact";
+import Footer from "./Footer";
+import Project from "./Project";
 
 function App() {
     return (
@@ -12,7 +14,9 @@ function App() {
         <Header />
         <Aboutme />
         <Myskills />
+        <Project />
         <Contact />
+        <Footer />
         </div>
     )
 };
