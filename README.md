@@ -1,3 +1,9 @@
+# Example Preview
+https://evcrboom.github.io/My-Portfolio/
+
+![image](https://github.com/evcrboom/My-Portfolio/assets/156238778/af3b6a2b-e5f0-4905-8555-3872fee4f142)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
