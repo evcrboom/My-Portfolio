@@ -6,10 +6,11 @@ import Myskills from "./Myskills";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import Project from "./Project";
+import "./App.css";
 
 function App() {
     return (
-        <div>
+        <div className="App">
         <Navbar />
         <Header />
         <Aboutme />

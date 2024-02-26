@@ -4,12 +4,14 @@
     align-items: center;
     padding-top: 2.5rem;
     gap: 1rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    
 }
 
 .background-aboutme {
     background: white;
     width: auto;
-    height: 60vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -53,12 +55,16 @@ img.profile {
 }
 
 .card {
-    transform: translateY(-2rem)
+    transform: translateY(-2rem);
+    display: flex;
+    justify-content: center;
+    width: 60%;
 }
 
 @media screen and (max-width: 1518px) {
     .card {
-        transform: translateY(0rem)
+        transform: translateY(0rem);
+    
     }
 }
 
@@ -79,5 +85,10 @@ img.profile {
         flex-direction: column-reverse;
         justify-content: center;
         gap: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .card {
+        width: 90%;
     }
 }

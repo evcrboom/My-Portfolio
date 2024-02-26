@@ -9,7 +9,7 @@
     align-items: center;
     gap: 2rem ;
     background: #FFEFD5;
-    height: 50vh;
+    
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
@@ -17,4 +17,108 @@
 .header-project h2 {
     font-size: 2.5rem;
     color: #000000DE;
+}
+
+.project-container-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 0;
+    align-items: center;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin-bottom: 30px;
+}
+
+.project-list img.first-image {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: right center;
+    border-radius: 10px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+   
+}
+
+.project-list img.second-image {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    object-position: -170px;
+    border-radius: 10px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7);
+   
+}
+
+
+.project-list img.third-image {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;  
+    border-radius: 10px ;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+   
+}
+
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    
+}
+
+.project-detail h3 {
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.project-detail p {
+    font-family: "Lora", serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.5rem;
+}
+
+.span-link a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width:1025px) { 
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .project-detail {
+        width: 90%;
+    }
+
+    .project-list img {
+        scale: 0.6;
+    }
+
+    .project-detail h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-detail p {
+        font-size: 1.2rem;
+    }
+
 }

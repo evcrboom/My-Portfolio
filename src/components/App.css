@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100%; /* ทำให้ body มีความสูงเต็มหน้าจอ */
+    width: 100%; /* ทำให้ body มีความกว้างเต็มหน้าจอ */
+    
+  }
+
+.App {
+    overflow: hidden;
+    width: 100%;
+}

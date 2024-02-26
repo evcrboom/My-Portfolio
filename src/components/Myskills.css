@@ -1,56 +1,113 @@
 .myskill-container {
-    display: flex;
-    flex-direction: column;   
-    background: #FFE4C4;
-    height: auto;
-    padding: 2.5rem 0 4rem 0;
-    line-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  background: #ffe4c4;
+  height: auto;
+  padding: 2.5rem 0 4rem 0;
+  line-height: 5rem;
 }
 
-.myskill-container h2 {   
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #000000DE;
+.myskill-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000de;
 }
 
 .myskill-container h3 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000000DE;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000de;
 }
 
 .row {
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-    
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
 }
 
 .col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon {
-    display: flex;
-    gap: 3rem;
+  display: flex;
+  gap: 3rem;
 }
 
 @media screen and (max-width: 1447px) {
-    .row {
-        flex-direction: column;
-        align-items: center;
-    }
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 650px) {
-    .icon {
-        gap: 1rem;
-        flex-wrap: wrap;
-    }
+  .icon {
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+.certificate-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0 4rem 0;
+  gap: 2rem;
+}
+
+.certificate-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.certificate-card img {
+  width: 400px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-container h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000000de;
+}
+
+.certificate-card img.zoomed {
+  transform: scale(2);
+  z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+}
+
+.certificate-card img:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1025px) {
+  .certificate-card {
+    flex-direction: column;
+    gap: 50px;
+    scale: 0.8;
+  }
+
+  .certificate-card img.zoomed {
+    transform: scale(2);
+    z-index: 1000;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.3);
+  }
 }

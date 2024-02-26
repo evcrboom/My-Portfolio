@@ -1,12 +1,12 @@
 .background-Header {
     color: #353239;
     background: #FFE4C4;
-    width: auto;
     height: 94vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .p-text {
