@@ -6,16 +6,17 @@ const Navbar = () => {
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
+        console.log(isOpen);
     };
 
     return (
         <nav className="navbar">
             <div className="logo">console.log(Nattapat.Portfolio)</div>
             <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-                <li><a href="#Aboutme">About Me</a></li>
-                <li><a href="#myskills">My Skills</a></li>
-                <li><a href="#my-project">My Projects</a></li>
-                <li><a href="#contact-me">Contact Me</a></li>
+                <li><a href="#Aboutme" onClick={toggleMenu}>About Me</a></li>
+                <li><a href="#myskills" onClick={toggleMenu}>My Skills</a></li>
+                <li><a href="#my-project" onClick={toggleMenu}>My Projects</a></li>
+                <li><a href="#contact-me" onClick={toggleMenu}>Contact Me</a></li>
             </ul>
             <div className={`hamburger ${isOpen ? "toggle" : ""}`} onClick={toggleMenu}>
                 <div className="line1"></div>
